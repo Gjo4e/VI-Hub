@@ -1,0 +1,435 @@
+{
+  "schema": 1,
+  "revision": 2,
+  "updated": "2026-11-21",
+  "entries": [
+    {
+      "id": "vice",
+      "title": "Vice City",
+      "body": "The main urban region of Leonida, with coastal neighborhoods, a downtown skyline and beaches.",
+      "source": "Rockstar: Only in Leonida",
+      "category": "Places",
+      "status": "Official"
+    },
+    {
+      "id": "keys",
+      "title": "Leonida Keys",
+      "body": "A chain of subtropical islands and coastal communities south of the mainland.",
+      "source": "Rockstar: Only in Leonida",
+      "category": "Places",
+      "status": "Official"
+    },
+    {
+      "id": "grass",
+      "title": "Grassrivers",
+      "body": "Wetlands and waterways with natural habitats, away from the main urban areas.",
+      "source": "Rockstar: Only in Leonida",
+      "category": "Places",
+      "status": "Official"
+    },
+    {
+      "id": "gellhorn",
+      "title": "Port Gellhorn",
+      "body": "A waterfront town on the western side of the state.",
+      "source": "Rockstar: Only in Leonida",
+      "category": "Places",
+      "status": "Official"
+    },
+    {
+      "id": "ambrosia",
+      "title": "Ambrosia",
+      "body": "An inland community associated with agriculture and industry.",
+      "source": "Rockstar: Only in Leonida",
+      "category": "Places",
+      "status": "Official"
+    },
+    {
+      "id": "kalaga",
+      "title": "Mount Kalaga",
+      "body": "A northern national park, with hills, forest and outdoor scenery.",
+      "source": "Rockstar: Only in Leonida",
+      "category": "Places",
+      "status": "Official"
+    },
+    {
+      "id": "lento",
+      "title": "Key Lento",
+      "body": "An island in the southern portion of the official tourism map, grid K6.",
+      "source": "Rockstar printable map; Vi.ki, Nov 20",
+      "category": "Places",
+      "status": "Official"
+    },
+    {
+      "id": "downtown",
+      "title": "Downtown Vice City",
+      "body": "A city district containing waterfront areas and the Dock Ring landmark.",
+      "source": "GTA Corner, Nov 20",
+      "category": "Places",
+      "status": "Community"
+    },
+    {
+      "id": "washington",
+      "title": "Washington Beach",
+      "body": "A Vice Beach district with several documented sculpture scans.",
+      "source": "GTA Corner, Nov 20",
+      "category": "Places",
+      "status": "Community"
+    },
+    {
+      "id": "tequesta",
+      "title": "Tequesta",
+      "body": "A Vice City district that includes the Pixel Fountain landmark.",
+      "source": "GTA Corner, Nov 20",
+      "category": "Places",
+      "status": "Community"
+    },
+    {
+      "id": "belpoint",
+      "title": "Belpoint",
+      "body": "A Mariana County community with a lighthouse landmark.",
+      "source": "GTA Corner, Nov 20",
+      "category": "Places",
+      "status": "Community"
+    },
+    {
+      "id": "moreau",
+      "title": "Moreau",
+      "body": "A Lummox County community where historical ruins and a paper mill are documented.",
+      "source": "GTA Corner, Nov 20",
+      "category": "Places",
+      "status": "Community"
+    },
+    {
+      "id": "corsair",
+      "title": "Corsair Key",
+      "body": "An island in Mariana County with a documented sculpture landmark.",
+      "source": "GTA Corner, Nov 20",
+      "category": "Places",
+      "status": "Community"
+    },
+    {
+      "id": "manifest",
+      "title": "Manifest Canyon",
+      "body": "A Kelly County area with a documented orchard landmark.",
+      "source": "GTA Corner, Nov 20",
+      "category": "Places",
+      "status": "Community"
+    },
+    {
+      "id": "jason",
+      "title": "Jason Duval",
+      "body": "One of the two playable story protagonists, associated with the Leonida Keys.",
+      "source": "Rockstar: Only in Leonida",
+      "category": "Characters",
+      "status": "Official"
+    },
+    {
+      "id": "lucia",
+      "title": "Lucia Caminos",
+      "body": "The second central protagonist. Her relationship with Jason shapes the story.",
+      "source": "Rockstar: Only in Leonida",
+      "category": "Characters",
+      "status": "Official"
+    },
+    {
+      "id": "cal",
+      "title": "Cal Hampton",
+      "body": "A friend of Jason whose interests include online theories and radio communications.",
+      "source": "Rockstar: Only in Leonida",
+      "category": "Characters",
+      "status": "Official"
+    },
+    {
+      "id": "drequan",
+      "title": "Dre’Quan Priest",
+      "body": "An aspiring music executive associated with Only Raw Records.",
+      "source": "Rockstar: Only in Leonida",
+      "category": "Characters",
+      "status": "Official"
+    },
+    {
+      "id": "dimez",
+      "title": "Real Dimez",
+      "body": "A music duo made up of Bae-Luxe and Roxy.",
+      "source": "Rockstar: Only in Leonida",
+      "category": "Characters",
+      "status": "Official"
+    },
+    {
+      "id": "boobie",
+      "title": "Boobie Ike",
+      "body": "A Vice City business figure involved in real estate and music.",
+      "source": "Rockstar: Only in Leonida",
+      "category": "Characters",
+      "status": "Official"
+    },
+    {
+      "id": "launch",
+      "title": "Launch platforms",
+      "body": "Released on November 19, 2026, for PlayStation 5 and Xbox Series X|S.",
+      "source": "Rockstar Games, Nov 19, 2026",
+      "category": "Game",
+      "status": "Official"
+    },
+    {
+      "id": "world",
+      "title": "Leonida",
+      "body": "The fictional state is the setting of GTA VI. Its environments span urban coastlines, islands, wetlands and inland regions.",
+      "source": "Rockstar Games, Nov 19, 2026",
+      "category": "Game",
+      "status": "Official"
+    },
+    {
+      "id": "poster",
+      "title": "Official printable map",
+      "body": "Rockstar published a tourism-style Leonida poster at launch. Its printed grid can help identify broad regions; it is not a live game-position map.",
+      "source": "Rockstar Games, Nov 19, 2026",
+      "category": "Game",
+      "status": "Official"
+    },
+    {
+      "id": "album",
+      "title": "Game soundtrack",
+      "body": "Rockstar announced a launch album containing 34 original tracks.",
+      "source": "Rockstar Games, Nov 19, 2026",
+      "category": "Game",
+      "status": "Official"
+    },
+    {
+      "id": "mill",
+      "title": "Lawton Co. Paper Mill",
+      "body": "Landmark scan in Moreau, Lummox County.",
+      "source": "GTA Corner, Nov 20, 2026; community reports",
+      "category": "Collectibles",
+      "status": "Community"
+    },
+    {
+      "id": "orchard",
+      "title": "Farmer Scrumpy’s Apple Orchard",
+      "body": "Landmark scan in Manifest Canyon, Kelly County.",
+      "source": "GTA Corner, Nov 20, 2026; community reports",
+      "category": "Collectibles",
+      "status": "Community"
+    },
+    {
+      "id": "fair",
+      "title": "Gellhorn Fun Fair",
+      "body": "Landmark scan in Port Gellhorn, Kelly County.",
+      "source": "GTA Corner, Nov 20, 2026; community reports",
+      "category": "Collectibles",
+      "status": "Community"
+    },
+    {
+      "id": "lighthouse",
+      "title": "Belpoint Lighthouse",
+      "body": "Landmark scan in Belpoint, Mariana County.",
+      "source": "GTA Corner, Nov 20, 2026; community reports",
+      "category": "Collectibles",
+      "status": "Community"
+    },
+    {
+      "id": "lookout",
+      "title": "Kalaga Lookout",
+      "body": "Landmark scan in the Mount Kalaga area.",
+      "source": "GTA Corner, Nov 20, 2026; community reports",
+      "category": "Collectibles",
+      "status": "Community"
+    },
+    {
+      "id": "dock",
+      "title": "Dock Ring",
+      "body": "Landmark scan around the downtown Vice City docks.",
+      "source": "GTA Corner, Nov 20, 2026; community reports",
+      "category": "Collectibles",
+      "status": "Community"
+    },
+    {
+      "id": "ruins",
+      "title": "Imperial Spanish Ruins",
+      "body": "Curiosity scan in Moreau, Lummox County.",
+      "source": "GTA Corner, Nov 20, 2026; community reports",
+      "category": "Collectibles",
+      "status": "Community"
+    },
+    {
+      "id": "fountain",
+      "title": "Pixel Fountain",
+      "body": "Sculpture scan in Tequesta, Vice City.",
+      "source": "GTA Corner, Nov 20, 2026; community reports",
+      "category": "Collectibles",
+      "status": "Community"
+    },
+    {
+      "id": "neptune",
+      "title": "Neptune Rises",
+      "body": "Sculpture scan at Washington Beach, Vice Beach.",
+      "source": "GTA Corner, Nov 20, 2026; community reports",
+      "category": "Collectibles",
+      "status": "Community"
+    },
+    {
+      "id": "museum",
+      "title": "Vice Museum of Art Sculpture",
+      "body": "Sculpture scan in Washington Beach, Vice Beach.",
+      "source": "GTA Corner, Nov 20, 2026; community reports",
+      "category": "Collectibles",
+      "status": "Community"
+    },
+    {
+      "id": "scans",
+      "title": "WAiNK scans",
+      "body": "A launch guide reports 100 scans toward the completion checklist. Track discovered landmarks here and compare with the game's progress menu.",
+      "source": "PowerPyx, Nov 18, 2026",
+      "category": "Activities",
+      "status": "Community"
+    },
+    {
+      "id": "cards",
+      "title": "Collectible cards",
+      "body": "One launch guide reports 18 sets, with 15 counting toward the completion goal. Totals may be revised.",
+      "source": "GTA VI Guide, Nov 19, 2026",
+      "category": "Activities",
+      "status": "Community"
+    },
+    {
+      "id": "reading",
+      "title": "Books and magazines",
+      "body": "Track found reading items; launch guides report 30 with book swaps included.",
+      "source": "GTA VI Guide, Nov 19, 2026",
+      "category": "Activities",
+      "status": "Community"
+    },
+    {
+      "id": "underwater",
+      "title": "Underwater discoveries",
+      "body": "Launch guides list 33 underwater discoveries. This is a game collectible category, not a real-world activity guide.",
+      "source": "GTA VI Guide, Nov 19, 2026",
+      "category": "Activities",
+      "status": "Community"
+    },
+    {
+      "id": "mission-1-1",
+      "missionId": "story-1-1",
+      "title": "Prologue",
+      "body": "The opening entry introduces Lucia and establishes the start of the story.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
+    },
+    {
+      "id": "mission-1-4",
+      "missionId": "story-1-4",
+      "title": "Just a Scratch",
+      "body": "An early Jason story entry involving his vehicle.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
+    },
+    {
+      "id": "mission-1-9",
+      "missionId": "story-1-9",
+      "title": "Island Dreams",
+      "body": "An early story entry associated with the island setting.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
+    },
+    {
+      "id": "mission-1-10",
+      "missionId": "story-1-10",
+      "title": "Feng Shui",
+      "body": "A story moment involving Jason and Cal at home.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
+    },
+    {
+      "id": "mission-1-21",
+      "missionId": "story-1-21",
+      "title": "Home Sweet Home",
+      "body": "A later encounter in the opening chapter.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
+    },
+    {
+      "id": "mission-2-3",
+      "missionId": "story-2-3",
+      "title": "Just Moved In",
+      "body": "A Lucia story entry about settling in a new place.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
+    },
+    {
+      "id": "mission-2-4",
+      "missionId": "story-2-4",
+      "title": "Girls’ Trip",
+      "body": "A chapter-two entry involving Lucia and a new friendship.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
+    },
+    {
+      "id": "mission-2-8",
+      "missionId": "story-2-8",
+      "title": "Breakfast Run",
+      "body": "A brief moment shared by the two protagonists.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
+    },
+    {
+      "id": "mission-2-9",
+      "missionId": "story-2-9",
+      "title": "Coffee Break",
+      "body": "A chapter-two conversation between the protagonists.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
+    },
+    {
+      "id": "mission-3-1",
+      "missionId": "story-3-1",
+      "title": "Welcome to Vice City",
+      "body": "Introduces a new chapter in the city, with Dre’Quan featuring in the story.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
+    },
+    {
+      "id": "mission-3-5",
+      "missionId": "story-3-5",
+      "title": "Mami Knows Best",
+      "body": "A Lucia story entry concerning family.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
+    },
+    {
+      "id": "mission-4-1",
+      "missionId": "story-4-1",
+      "title": "Ocean Beach",
+      "body": "The opening entry of chapter four, in the Vice Beach area.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
+    }
+  ],
+  "news": [
+    {
+      "id": "launch-news",
+      "title": "GTA VI launches on consoles",
+      "summary": "Rockstar announced worldwide availability for PS5 and Xbox Series X|S on November 19. The launch also brought new official media, a printable map and a 34-track album.",
+      "date": "2026-11-19",
+      "source": "Rockstar Newswire"
+    },
+    {
+      "id": "map-news",
+      "title": "Official Leonida map released",
+      "summary": "The launch media collection includes a print-ready map of Leonida. VI Hub uses this source in its map viewer and keeps a local copy for later use.",
+      "date": "2026-11-19",
+      "source": "Rockstar media downloads"
+    }
+  ]
+}

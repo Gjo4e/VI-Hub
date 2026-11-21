@@ -24,6 +24,7 @@ public class MainActivity extends Activity {
     private final ExecutorService worker = Executors.newSingleThreadExecutor();
     private String verifiedAsset = "";
     private final ExecutorService mapWorker = Executors.newSingleThreadExecutor();
+    private final ExecutorService contentWorker = Executors.newSingleThreadExecutor();
     private final java.util.concurrent.atomic.AtomicBoolean mapLoading = new java.util.concurrent.atomic.AtomicBoolean(false);
     private static final String MAP_URL = "https://media-rockstargames-com.akamaized.net/VI/downloads/artwork_wallpapers/Leonida_Map_Poster_Printable.zip";
     private static final String MAP_IMAGE = "https://vihub.invalid/official-map.jpg";
@@ -44,7 +45,7 @@ public class MainActivity extends Activity {
             @Override public boolean shouldOverrideUrlLoading(WebView v, WebResourceRequest r) { return true; }
             @Override public WebResourceResponse shouldInterceptRequest(WebView v, WebResourceRequest r) {
                 if (MAP_IMAGE.equals(r.getUrl().toString())) {
-                    try { return new WebResourceResponse("image/jpeg",null,new FileInputStream(new File(getCacheDir(),"leonida-map.jpg"))); }
+                    try { return new WebResourceResponse("image/jpeg",null,new FileInputStream(new File(getFilesDir(),"leonida-map.jpg"))); }
                     catch(IOException e) { return new WebResourceResponse("text/plain","UTF-8",new ByteArrayInputStream(new byte[0])); }
                 }
                 if (r.getUrl().toString().startsWith("file:///android_asset/")) return null;
@@ -84,14 +85,27 @@ public class MainActivity extends Activity {
     }
     public class Bridge {
         @JavascriptInterface public String config(){JSONObject o=obj("repo",BuildConfig.DEFAULT_REPO);try{o.put("version",BuildConfig.VERSION_NAME);}catch(Exception ignored){}return o.toString();}
-        @JavascriptInterface public void browse(String url){open(url);}
+        @JavascriptInterface public String bundledCatalog(){
+            try(InputStream in=getAssets().open("catalog.json");ByteArrayOutputStream out=new ByteArrayOutputStream()){
+              byte[] b=new byte[8192];int n;while((n=in.read(b))!=-1){out.write(b,0,n);if(out.size()>1_000_000)throw new IOException("Catalog too large");}
+              return out.toString("UTF-8");
+            }catch(Exception e){return "{}";}
+        }
+        @JavascriptInterface public void refreshCatalog(){
+            contentWorker.execute(()->{try{
+                JSONObject data=new JSONObject(read("https://raw.githubusercontent.com/Gjo4e/VI-Hub/main/app/src/main/assets/catalog.json"));
+                if(data.optInt("schema")!=1||data.optInt("revision")<1||data.optJSONArray("entries")==null||data.optJSONArray("news")==null)throw new IOException("Invalid content catalog");
+                reply("catalog",data);
+            }catch(Exception e){reply("catalog",obj("error","Content refresh unavailable. Your saved library is still available."));}});
+        }
         @JavascriptInterface public void loadMap(){
-            if(new File(getCacheDir(),"leonida-map.jpg").length()>0){reply("map",obj("state","ready"));return;}
+            if(new File(getFilesDir(),"leonida-map.jpg").length()>0){reply("map",obj("state","ready"));return;}
             if(!mapLoading.compareAndSet(false,true))return;
             mapWorker.execute(()->{try{fetchMap();reply("map",obj("state","ready"));}catch(Exception e){error("map",e);}finally{mapLoading.set(false);}});
         }
         @JavascriptInterface public void news(String filter){worker.execute(()->{try{fetchNews(filter);}catch(Exception e){error("news",e);}});}
-        @JavascriptInterface public void checkUpdate(String repo){worker.execute(()->{try{
+        @JavascriptInterface public void checkUpdate(){worker.execute(()->{try{
+            String repo=BuildConfig.DEFAULT_REPO;
             verifiedAsset=""; if(!validRepo(repo))throw new IOException("Enter a public GitHub repository as owner/repo.");
             JSONObject release=new JSONObject(read("https://api.github.com/repos/"+repo+"/releases/latest"));
             String tag=release.getString("tag_name");JSONObject result=obj("tag",tag);result.put("current",BuildConfig.VERSION_NAME);
@@ -101,13 +115,13 @@ public class MainActivity extends Activity {
                 JSONObject a=assets.getJSONObject(i);String u=a.optString("browser_download_url");
                 if(a.optString("name").equals("VI-Hub.apk") && u.startsWith("https://github.com/"+repo+"/releases/download/")){verifiedAsset=u;break;}}
             result.put("download",!verifiedAsset.isEmpty()); reply("update",result);
-        }catch(Exception e){error("update",e);}});}
+        }catch(Exception e){reply("update",obj("error","Could not check for updates. Try again later."));}});}
         @JavascriptInterface public void installUpdate(){worker.execute(()->{try{downloadAndInstall();}catch(Exception e){error("install",e);}});}
     }
     private void fetchMap() throws Exception {
         File raw = new File(getCacheDir(),"leonida-source.tmp");
-        File out = new File(getCacheDir(),"leonida-cache.tmp");
-        File target = new File(getCacheDir(),"leonida-map.jpg");
+        File out = new File(getFilesDir(),"leonida-cache.tmp");
+        File target = new File(getFilesDir(),"leonida-map.jpg");
         HttpURLConnection c = connect(MAP_URL);
         c.setReadTimeout(60000);
         boolean found=false;
@@ -117,7 +131,7 @@ public class MainActivity extends Activity {
                 while((entry=zip.getNextEntry())!=null){
                     if(entry.isDirectory())continue;
                     String name=entry.getName().toLowerCase(java.util.Locale.ROOT);
-                    if(!name.endsWith(".jpg")&&!name.endsWith(".jpeg"))throw new IOException("Unexpected map download format");
+                    if(!name.endsWith(".jpg")&&!name.endsWith(".jpeg"))continue;
                     try(FileOutputStream f=new FileOutputStream(raw)){
                         byte[] bytes=new byte[65536];int n;long size=0;
                         while((n=zip.read(bytes))!=-1){size+=n;if(size>75_000_000L)throw new IOException("Map exceeds size limit");f.write(bytes,0,n);}
@@ -142,7 +156,7 @@ public class MainActivity extends Activity {
         } finally {c.disconnect();raw.delete();out.delete();}
     }
     private void fetchNews(String filter) throws Exception {
-        String q="Grand Theft Auto VI";
+        String q="Grand Theft Auto VI launch OR patch OR accessibility OR performance OR soundtrack";
         if(filter.equals("Official"))q+=" site:rockstargames.com";
         if(filter.equals("Updates"))q+=" updates patches";
         if(filter.equals("Community"))q+=" community game news";
@@ -175,5 +189,5 @@ public class MainActivity extends Activity {
         runOnUiThread(()->{try{Uri uri=Uri.parse("content://"+getPackageName()+".update/verified-update.apk");Intent i=new Intent(Intent.ACTION_VIEW);i.setDataAndType(uri,"application/vnd.android.package-archive");i.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);startActivity(i);reply("install",obj("message","APK verified. Confirm the update in Android."));}catch(Exception e){error("install",e);}});
     }
     @Override public void onBackPressed(){web.evaluateJavascript("window.backScreen()",null);}
-    @Override protected void onDestroy(){worker.shutdownNow();mapWorker.shutdownNow();if(web!=null){web.destroy();web=null;}super.onDestroy();}
+    @Override protected void onDestroy(){worker.shutdownNow();mapWorker.shutdownNow();contentWorker.shutdownNow();if(web!=null){web.destroy();web=null;}super.onDestroy();}
 }
