@@ -1,29 +1,23 @@
 # VI Hub
 
-**Your world. Your guide.**
+Your world. Your guide.
 
-An unofficial Android companion for GTA VI, with a Vice City-inspired neon interface.
+Unofficial Android companion for GTA VI with a Vice City-inspired neon interface.
 
-## Initial app scope
+## Features
+- Live news headlines and web search
+- Personal mission checklist and progress tracking
+- Location directory, saved places and illustrative interactive map
+- Game information and official source links
+- GitHub release checks, signed APK updates and preferences
 
-- News feed with source links and cached headlines
-- Mission checklist and progress tracking
-- Location directory, saved places and an illustrative interactive map
-- Web search and official game information
-- Settings, release alerts and GitHub update checking
+## Release pipeline
 
-## Android project
+GitHub Actions builds the application when source changes are pushed to main. The repository's `VIHUB_SIGNING` secret contains a private signing bundle. Keep this key private and persistent across releases. Do not commit the secret, passwords, or keystore. Each new build uses an increasing version code. The app verifies the package, version and signing certificate before presenting Android's installation confirmation.
 
-Package: `com.vihub.companion` · Minimum Android 8.0 · Initial version 1.0.0
+- Package: `com.vihub.companion`
+- Minimum Android: 8.0 (API 26)
+- [Build status](https://github.com/Gjo4e/VI-Hub/actions)
+- [APK releases](https://github.com/Gjo4e/VI-Hub/releases)
 
-The first source package is prepared separately and needs to be extracted into the repository root (including `app/`, `.github/`, `build.gradle`, `settings.gradle` and `gradle.properties`). Once committed, the included GitHub Actions workflow can build a test APK. Versioned releases require a persistent release signing key stored securely in GitHub Actions secrets. Do not commit the key or passwords.
-
-See the README included in the source package for detailed build and release instructions. The updater checks this repository's releases, verifies the package and signing certificate, and uses Android's installation confirmation.
-
-## Links
-
-- [Repository](https://github.com/Gjo4e/VI-Hub)
-- [Releases](https://github.com/Gjo4e/VI-Hub/releases)
-- [Actions](https://github.com/Gjo4e/VI-Hub/actions)
-
-Fan-made, not affiliated with Rockstar Games or Take-Two. Map geometry and concept artwork are illustrative, not official game assets.
+Initial build and device update tests are pending. Map geometry and artwork are illustrative. Not affiliated with Rockstar Games or Take-Two.
