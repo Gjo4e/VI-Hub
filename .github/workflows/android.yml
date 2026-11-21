@@ -1,0 +1,76 @@
+name: Build and release VI Hub
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['app/**', 'build.gradle', 'settings.gradle', 'gradle.properties', '.github/workflows/android.yml']
+permissions:
+  contents: write
+concurrency:
+  group: vi-hub-release
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify source files
+        run: |
+          test -f app/build.gradle
+          test -f app/src/main/assets/index.html
+          test -f app/src/main/assets/hero.webp
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: Prepare persistent signing key
+        env:
+          SIGNING_BUNDLE: ${{ secrets.VIHUB_SIGNING }}
+        run: |
+          python3 - <<'PYCODE'
+          import base64, json, os
+          from pathlib import Path
+          value = os.environ.get('SIGNING_BUNDLE', '')
+          if not value:
+              raise SystemExit('Set the VIHUB_SIGNING repository secret before building.')
+          bundle = json.loads(value)
+          password = bundle['password']
+          if not password or any(c in password for c in '\r\n'):
+              raise SystemExit('Invalid signing bundle.')
+          print('::add-mask::' + password)
+          print('::add-mask::' + bundle['keystore'])
+          path = Path(os.environ['RUNNER_TEMP']) / 'release.p12'
+          path.write_bytes(base64.b64decode(bundle['keystore'], validate=True))
+          path.chmod(0o600)
+          with open(os.environ['GITHUB_ENV'], 'a') as f:
+              f.write(f'SIGNING_STORE_FILE={path}\nSIGNING_STORE_PASSWORD={password}\nSIGNING_KEY_PASSWORD={password}\nSIGNING_KEY_ALIAS=vihub\n')
+              run = int(os.environ['GITHUB_RUN_NUMBER'])
+              f.write(f'APP_VERSION_CODE={run}\nAPP_VERSION_NAME=1.0.{run-1}\n')
+          PYCODE
+      - name: Build signed APK
+        run: |
+          gradle --no-daemon :app:assembleRelease
+          cp app/build/outputs/apk/release/app-release.apk VI-Hub.apk
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose VI-Hub.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: VI-Hub
+          path: VI-Hub.apk
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="v$APP_VERSION_NAME"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Release $TAG already exists; leaving it unchanged."
+          else
+            gh release create "$TAG" VI-Hub.apk --target "$GITHUB_SHA" --generate-notes --title "VI Hub $APP_VERSION_NAME"
+          fi
+      - name: Remove signing key from runner
+        if: always()
+        run: rm -f "$RUNNER_TEMP/release.p12"
