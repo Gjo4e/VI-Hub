@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": 3,
+  "revision": 4,
   "updated": "2026-11-21",
   "entries": [
     {
@@ -311,262 +311,1438 @@
       "id": "mission-1-1",
       "missionId": "story-1-1",
       "title": "Prologue",
-      "body": "The opening entry introduces Lucia and establishes the start of the story.",
+      "body": "Lucia's prison counseling session.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 1
+    },
+    {
+      "id": "mission-1-2",
+      "missionId": "story-1-2",
+      "title": "Gone Fishing",
+      "body": "Jason's early work alongside Donnie.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 2
+    },
+    {
+      "id": "mission-1-3",
+      "missionId": "story-1-3",
+      "title": "Gear Up",
+      "body": "An early Jason equipment errand.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 3
     },
     {
       "id": "mission-1-4",
       "missionId": "story-1-4",
       "title": "Just a Scratch",
-      "body": "An early Jason story entry involving his vehicle.",
+      "body": "The Ganado needs attention at a garage.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 4
     },
     {
-      "id": "mission-1-9",
-      "missionId": "story-1-9",
-      "title": "Island Dreams",
-      "body": "An early story entry associated with the island setting.",
+      "id": "mission-1-5",
+      "missionId": "story-1-5",
+      "title": "Lab Fees",
+      "body": "Jason handles rent collection.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 5
     },
     {
-      "id": "mission-1-10",
-      "missionId": "story-1-10",
-      "title": "Feng Shui",
-      "body": "A story moment involving Jason and Cal at home.",
+      "id": "mission-1-6",
+      "missionId": "story-1-6",
+      "title": "Unwanted Attention",
+      "body": "Cal accompanies Jason to Hamlet.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
-    },
-    {
-      "id": "mission-1-21",
-      "missionId": "story-1-21",
-      "title": "Home Sweet Home",
-      "body": "A later encounter in the opening chapter.",
-      "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
-    },
-    {
-      "id": "mission-2-3",
-      "missionId": "story-2-3",
-      "title": "Just Moved In",
-      "body": "A Lucia story entry about settling in a new place.",
-      "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
-    },
-    {
-      "id": "mission-2-4",
-      "missionId": "story-2-4",
-      "title": "Girls’ Trip",
-      "body": "A chapter-two entry involving Lucia and a new friendship.",
-      "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
-    },
-    {
-      "id": "mission-2-8",
-      "missionId": "story-2-8",
-      "title": "Breakfast Run",
-      "body": "A brief moment shared by the two protagonists.",
-      "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
-    },
-    {
-      "id": "mission-2-9",
-      "missionId": "story-2-9",
-      "title": "Coffee Break",
-      "body": "A chapter-two conversation between the protagonists.",
-      "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
-    },
-    {
-      "id": "mission-3-1",
-      "missionId": "story-3-1",
-      "title": "Welcome to Vice City",
-      "body": "Introduces a new chapter in the city, with Dre’Quan featuring in the story.",
-      "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
-    },
-    {
-      "id": "mission-3-5",
-      "missionId": "story-3-5",
-      "title": "Mami Knows Best",
-      "body": "A Lucia story entry concerning family.",
-      "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
-    },
-    {
-      "id": "mission-4-1",
-      "missionId": "story-4-1",
-      "title": "Ocean Beach",
-      "body": "The opening entry of chapter four, in the Vice Beach area.",
-      "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "cal"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 6
     },
     {
       "id": "mission-1-7",
       "missionId": "story-1-7",
       "title": "Pipework",
-      "body": "Jason deals with repairs.",
+      "body": "An everyday home maintenance task.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; brief story context"
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 7
+    },
+    {
+      "id": "mission-1-8",
+      "missionId": "story-1-8",
+      "title": "Hey Arnold!",
+      "body": "An encounter involving Brian and Cal.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "cal"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 8
+    },
+    {
+      "id": "mission-1-9",
+      "missionId": "story-1-9",
+      "title": "Island Dreams",
+      "body": "Jason explores beneath the water.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 9
+    },
+    {
+      "id": "mission-1-10",
+      "missionId": "story-1-10",
+      "title": "Feng Shui",
+      "body": "Cal helps Jason rearrange his home.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "cal"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 10
     },
     {
       "id": "mission-1-11",
       "missionId": "story-1-11",
       "title": "Coming Home",
-      "body": "Lucia returns to the story's everyday setting.",
+      "body": "Lucia returns from custody.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; brief story context"
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 11
+    },
+    {
+      "id": "mission-1-12",
+      "missionId": "story-1-12",
+      "title": "Buck Me",
+      "body": "The protagonists organize their finances.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 12
+    },
+    {
+      "id": "mission-1-13",
+      "missionId": "story-1-13",
+      "title": "Clean Up After Donnie",
+      "body": "A package linked to Donnie.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 13
+    },
+    {
+      "id": "mission-1-14",
+      "missionId": "story-1-14",
+      "title": "Down to Earth",
+      "body": "A joint assignment for the pair.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 14
+    },
+    {
+      "id": "mission-1-15",
+      "missionId": "story-1-15",
+      "title": "Clear Skies",
+      "body": "Donnie introduces Jason to a biker group.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 15
+    },
+    {
+      "id": "mission-1-16",
+      "missionId": "story-1-16",
+      "title": "Day Release",
+      "body": "An outing involving Mattia and the protagonists.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 16
+    },
+    {
+      "id": "mission-1-17",
+      "missionId": "story-1-17",
+      "title": "Swamped",
+      "body": "The Kingfishers enter the narrative.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 17
+    },
+    {
+      "id": "mission-1-18",
+      "missionId": "story-1-18",
+      "title": "Don Gone",
+      "body": "The guide withholds the plot of this entry.",
+      "category": "Missions",
+      "status": "Limited",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [],
+      "coverage": "limited",
+      "chapter": 1,
+      "sequence": 18
     },
     {
       "id": "mission-1-19",
       "missionId": "story-1-19",
       "title": "Recalibration",
-      "body": "The protagonists spend time with Cal.",
+      "body": "Cal spends time with the pair.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; brief story context"
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia",
+        "cal"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 19
+    },
+    {
+      "id": "mission-1-20",
+      "missionId": "story-1-20",
+      "title": "Tourist Trap",
+      "body": "A turning point before the chapter transition.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 20
+    },
+    {
+      "id": "mission-1-21",
+      "missionId": "story-1-21",
+      "title": "Home Sweet Home",
+      "body": "Lucia makes a return.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 21
     },
     {
       "id": "mission-1-22",
       "missionId": "story-1-22",
       "title": "Discharge Time",
-      "body": "Lucia checks in on Jason.",
+      "body": "Lucia visits Jason.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; brief story context"
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 1,
+      "sequence": 22
     },
     {
       "id": "mission-2-1",
       "missionId": "story-2-1",
       "title": "What's in the Bag?",
-      "body": "The setting shifts to Port Gellhorn.",
+      "body": "Arrival in Port Gellhorn.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; brief story context"
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [],
+      "region": 3,
+      "coverage": "brief",
+      "chapter": 2,
+      "sequence": 1
+    },
+    {
+      "id": "mission-2-2",
+      "missionId": "story-2-2",
+      "title": "Ambulance Chaser",
+      "body": "An ambulance-related story event.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 2,
+      "sequence": 2
+    },
+    {
+      "id": "mission-2-3",
+      "missionId": "story-2-3",
+      "title": "Just Moved In",
+      "body": "Lucia shops for her new surroundings.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 2,
+      "sequence": 3
+    },
+    {
+      "id": "mission-2-4",
+      "missionId": "story-2-4",
+      "title": "Girls’ Trip",
+      "body": "Lucia develops a friendship.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 2,
+      "sequence": 4
+    },
+    {
+      "id": "mission-2-5",
+      "missionId": "story-2-5",
+      "title": "Moses",
+      "body": "Lucia's storyline introduces Moses.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 2,
+      "sequence": 5
+    },
+    {
+      "id": "mission-2-6",
+      "missionId": "story-2-6",
+      "title": "Daily Driver",
+      "body": "A vehicle-centered assignment for Lucia.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 2,
+      "sequence": 6
+    },
+    {
+      "id": "mission-2-7",
+      "missionId": "story-2-7",
+      "title": "Slam Dunk",
+      "body": "Dunk and Lucia work together.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 2,
+      "sequence": 7
+    },
+    {
+      "id": "mission-2-8",
+      "missionId": "story-2-8",
+      "title": "Breakfast Run",
+      "body": "The pair share a meal.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 2,
+      "sequence": 8
+    },
+    {
+      "id": "mission-2-9",
+      "missionId": "story-2-9",
+      "title": "Coffee Break",
+      "body": "A conversation about their future.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 2,
+      "sequence": 9
+    },
+    {
+      "id": "mission-2-10",
+      "missionId": "story-2-10",
+      "title": "Afternoon Delight",
+      "body": "An outing for the two leads.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 2,
+      "sequence": 10
     },
     {
       "id": "mission-2-11",
       "missionId": "story-2-11",
       "title": "Checking Out",
-      "body": "The pair considers what comes next.",
+      "body": "They consider their next destination.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; brief story context"
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 2,
+      "sequence": 11
+    },
+    {
+      "id": "mission-3-1",
+      "missionId": "story-3-1",
+      "title": "Welcome to Vice City",
+      "body": "The protagonists encounter Dre’Quan.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia",
+        "drequan"
+      ],
+      "region": 0,
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 1
+    },
+    {
+      "id": "mission-3-2",
+      "missionId": "story-3-2",
+      "title": "Dealer’s Choice",
+      "body": "Jason pursues work in the city.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 2
     },
     {
       "id": "mission-3-3",
       "missionId": "story-3-3",
       "title": "Meet the Heders",
-      "body": "A social occasion introduces new acquaintances.",
+      "body": "A social meeting with the Heders.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; brief story context"
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 3
     },
     {
       "id": "mission-3-4",
       "missionId": "story-3-4",
       "title": "Dubious Provenance",
-      "body": "An antique shop features in the story.",
+      "body": "An antiques business enters the plot.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; brief story context"
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 4
+    },
+    {
+      "id": "mission-3-5",
+      "missionId": "story-3-5",
+      "title": "Mami Knows Best",
+      "body": "Lucia's family connections resurface.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 5
+    },
+    {
+      "id": "mission-3-6",
+      "missionId": "story-3-6",
+      "title": "South Leonida Real Estate",
+      "body": "An encounter with the M7 group.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 6
+    },
+    {
+      "id": "mission-3-7",
+      "missionId": "story-3-7",
+      "title": "Tyrone",
+      "body": "Tyrone becomes a potential contact.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 7
+    },
+    {
+      "id": "mission-3-8",
+      "missionId": "story-3-8",
+      "title": "Here, Kitty Kitty",
+      "body": "A story involving Charles.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 8
+    },
+    {
+      "id": "mission-3-9",
+      "missionId": "story-3-9",
+      "title": "Car Service",
+      "body": "Another vehicle-related story for Lucia.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 9
     },
     {
       "id": "mission-3-10",
       "missionId": "story-3-10",
       "title": "Top Billing",
-      "body": "Dre’Quan joins the protagonists at a music event.",
+      "body": "A concert with Dre’Quan.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; brief story context"
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia",
+        "drequan"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 10
+    },
+    {
+      "id": "mission-3-11",
+      "missionId": "story-3-11",
+      "title": "Boobie Time",
+      "body": "Jason spends time with Boobie Ike.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "boobie"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 11
     },
     {
       "id": "mission-3-12",
       "missionId": "story-3-12",
       "title": "First Impressions",
-      "body": "Raul enters the story.",
+      "body": "Raul meets the protagonists.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; brief story context"
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 12
+    },
+    {
+      "id": "mission-3-13",
+      "missionId": "story-3-13",
+      "title": "Caught Slipping",
+      "body": "A conflict over a break-in; list inclusion varies.",
+      "category": "Missions",
+      "status": "Limited",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "limited",
+      "chapter": 3,
+      "sequence": 13
+    },
+    {
+      "id": "mission-3-14",
+      "missionId": "story-3-14",
+      "title": "Crosstown Traffic",
+      "body": "Lucia's encounters with a local group.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 14
+    },
+    {
+      "id": "mission-3-15",
+      "missionId": "story-3-15",
+      "title": "Credit Check",
+      "body": "Raul introduces his base.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 15
+    },
+    {
+      "id": "mission-3-16",
+      "missionId": "story-3-16",
+      "title": "Steal the Zorrusso for Randy",
+      "body": "Randy's storyline involves a luxury car.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 16
+    },
+    {
+      "id": "mission-3-17",
+      "missionId": "story-3-17",
+      "title": "Sinfrontera National Bank",
+      "body": "The bank becomes important to the plot.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 17
+    },
+    {
+      "id": "mission-3-18",
+      "missionId": "story-3-18",
+      "title": "Security Expert",
+      "body": "Nicole enters the story.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 18
+    },
+    {
+      "id": "mission-3-19",
+      "missionId": "story-3-19",
+      "title": "Ride or Die",
+      "body": "Dre’Quan receives Jason's support.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "drequan"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 19
+    },
+    {
+      "id": "mission-3-20",
+      "missionId": "story-3-20",
+      "title": "Company Property",
+      "body": "A joint assignment.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 20
+    },
+    {
+      "id": "mission-3-21",
+      "missionId": "story-3-21",
+      "title": "The Missing Link",
+      "body": "An encounter in Lucia's storyline.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 21
+    },
+    {
+      "id": "mission-3-22",
+      "missionId": "story-3-22",
+      "title": "Safe Word",
+      "body": "Lucia develops a new ability.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 22
     },
     {
       "id": "mission-3-23",
       "missionId": "story-3-23",
       "title": "Cooties",
-      "body": "Lucia participates in a music-video project.",
+      "body": "Lucia takes part in a music video.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; brief story context"
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 23
+    },
+    {
+      "id": "mission-3-24",
+      "missionId": "story-3-24",
+      "title": "Bricked Up",
+      "body": "An assignment connected to Boobie Ike.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia",
+        "boobie"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 24
+    },
+    {
+      "id": "mission-3-25",
+      "missionId": "story-3-25",
+      "title": "Hidden Charges",
+      "body": "The narrative approaches its chapter climax.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 25
+    },
+    {
+      "id": "mission-3-26",
+      "missionId": "story-3-26",
+      "title": "The Cartel Heist",
+      "body": "The chapter culminates in a major robbery.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 3,
+      "sequence": 26
+    },
+    {
+      "id": "mission-4-1",
+      "missionId": "story-4-1",
+      "title": "Ocean Beach",
+      "body": "A new base in Ocean Beach.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "region": 0,
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 1
     },
     {
       "id": "mission-4-2",
       "missionId": "story-4-2",
       "title": "Another Life",
-      "body": "Lucia reflects on earlier experiences.",
+      "body": "Lucia reflects on her history.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; brief story context"
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 2
+    },
+    {
+      "id": "mission-4-3",
+      "missionId": "story-4-3",
+      "title": "Company Cars",
+      "body": "New vehicles enter the story.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 3
     },
     {
       "id": "mission-4-4",
       "missionId": "story-4-4",
       "title": "Lawyer Up",
-      "body": "The protagonists are introduced to legal counsel.",
+      "body": "A meeting with legal counsel.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; brief story context"
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 4
+    },
+    {
+      "id": "mission-4-5",
+      "missionId": "story-4-5",
+      "title": "Party Hard",
+      "body": "An assignment involving a celebrity.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 5
+    },
+    {
+      "id": "mission-4-6",
+      "missionId": "story-4-6",
+      "title": "Heavy Lifting",
+      "body": "A delivery-related plot event.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 6
     },
     {
       "id": "mission-4-7",
       "missionId": "story-4-7",
       "title": "Photo/Shoot",
-      "body": "A photography session involves Dre’Quan.",
+      "body": "A photography session involving Dre’Quan.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; brief story context"
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia",
+        "drequan"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 7
+    },
+    {
+      "id": "mission-4-8",
+      "missionId": "story-4-8",
+      "title": "Making Gainz",
+      "body": "Lucia meets someone new.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 8
+    },
+    {
+      "id": "mission-4-9",
+      "missionId": "story-4-9",
+      "title": "Watch It",
+      "body": "A meeting with a venue operator.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "drequan"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 9
+    },
+    {
+      "id": "mission-4-10",
+      "missionId": "story-4-10",
+      "title": "Cash Injections",
+      "body": "Lucia assists an associate.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 10
+    },
+    {
+      "id": "mission-4-11",
+      "missionId": "story-4-11",
+      "title": "Amateur Hour",
+      "body": "Lucia supports Cisco during a dispute.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 11
+    },
+    {
+      "id": "mission-4-12",
+      "missionId": "story-4-12",
+      "title": "Dirty Work",
+      "body": "The protagonists establish new connections.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 12
+    },
+    {
+      "id": "mission-4-13",
+      "missionId": "story-4-13",
+      "title": "Too Much Baggage",
+      "body": "An airport-related assignment.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 13
+    },
+    {
+      "id": "mission-4-14",
+      "missionId": "story-4-14",
+      "title": "Adventures in Babysitting",
+      "body": "Jason works at a music venue.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 14
+    },
+    {
+      "id": "mission-4-15",
+      "missionId": "story-4-15",
+      "title": "Fresh Evidence",
+      "body": "A conflict involving sensitive information.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "drequan"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 15
+    },
+    {
+      "id": "mission-4-16",
+      "missionId": "story-4-16",
+      "title": "Power Play",
+      "body": "Jason seeks new information.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 16
+    },
+    {
+      "id": "mission-4-17",
+      "missionId": "story-4-17",
+      "title": "Child’s Play",
+      "body": "The pair help an acquaintance.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 17
     },
     {
       "id": "mission-4-18",
       "missionId": "story-4-18",
       "title": "Headliners",
-      "body": "The music duo performs at VYB.",
+      "body": "Real Dimez appear at VYB.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; brief story context"
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "dimez"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 18
+    },
+    {
+      "id": "mission-4-19",
+      "missionId": "story-4-19",
+      "title": "Close Surveillance",
+      "body": "Jason gathers information for the story.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 19
+    },
+    {
+      "id": "mission-4-20",
+      "missionId": "story-4-20",
+      "title": "Delivery Method",
+      "body": "A cover identity features in Jason's storyline.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 20
+    },
+    {
+      "id": "mission-4-21",
+      "missionId": "story-4-21",
+      "title": "Team Building",
+      "body": "Lucia's standing develops.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 21
+    },
+    {
+      "id": "mission-4-22",
+      "missionId": "story-4-22",
+      "title": "Fully Catered",
+      "body": "A vehicle-centered event.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 22
+    },
+    {
+      "id": "mission-4-23",
+      "missionId": "story-4-23",
+      "title": "VCIA Takedown",
+      "body": "The airport storyline reaches its climax.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 23
     },
     {
       "id": "mission-4-24",
       "missionId": "story-4-24",
       "title": "Sunset",
-      "body": "The pair seeks an explanation.",
+      "body": "The pair search for answers.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; brief story context"
+      "status": "Reported",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 4,
+      "sequence": 24
+    },
+    {
+      "id": "mission-4-25",
+      "missionId": "story-4-25",
+      "title": "Starting From Zero",
+      "body": "Chapter ending; plot details withheld.",
+      "category": "Missions",
+      "status": "Limited",
+      "source": "PC Gamer, 18 Nov 2026; GamesRadar+, 19 Nov 2026",
+      "characters": [],
+      "coverage": "limited",
+      "chapter": 4,
+      "sequence": 25
+    },
+    {
+      "id": "mission-5-1",
+      "missionId": "story-5-1",
+      "title": "Bird in the Hand",
+      "body": "A vehicle-centered opening event.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 5,
+      "sequence": 1
     },
     {
       "id": "mission-5-2",
       "missionId": "story-5-2",
       "title": "Taking Liberties",
-      "body": "The protagonists reconsider their plans.",
+      "body": "The story moves toward a new plan.",
       "category": "Missions",
-      "status": "Community",
-      "source": "PC Gamer, Nov 18, 2026; brief story context"
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [],
+      "coverage": "brief",
+      "chapter": 5,
+      "sequence": 2
+    },
+    {
+      "id": "mission-5-3",
+      "missionId": "story-5-3",
+      "title": "VC Baby",
+      "body": "A request for assistance.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [],
+      "coverage": "brief",
+      "chapter": 5,
+      "sequence": 3
+    },
+    {
+      "id": "mission-5-4",
+      "missionId": "story-5-4",
+      "title": "Doggie Bag",
+      "body": "An assignment concerning missing goods.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [],
+      "coverage": "brief",
+      "chapter": 5,
+      "sequence": 4
+    },
+    {
+      "id": "mission-5-5",
+      "missionId": "story-5-5",
+      "title": "Operation Savage Glory",
+      "body": "The storyline involves recovering a shipment.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [],
+      "coverage": "brief",
+      "chapter": 5,
+      "sequence": 5
+    },
+    {
+      "id": "mission-5-6",
+      "missionId": "story-5-6",
+      "title": "Protective Custody",
+      "body": "The protagonists cooperate.",
+      "category": "Missions",
+      "status": "Reported",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [
+        "jason",
+        "lucia"
+      ],
+      "coverage": "brief",
+      "chapter": 5,
+      "sequence": 6
+    },
+    {
+      "id": "mission-5-7",
+      "missionId": "story-5-7",
+      "title": "The End of the Road",
+      "body": "The main narrative concludes; outcomes withheld.",
+      "category": "Missions",
+      "status": "Limited",
+      "source": "GTA6.house, 20 Nov 2026; Push Square, 19 Nov 2026",
+      "characters": [],
+      "coverage": "limited",
+      "chapter": 5,
+      "sequence": 7
+    },
+    {
+      "id": "mission-optional-thrillbillies",
+      "missionId": "optional-thrillbillies",
+      "title": "Thrillbillies",
+      "body": "A late chapter-two entry; plot not established by the sources.",
+      "category": "Missions",
+      "status": "Limited",
+      "source": "GamesRadar+, 19 Nov 2026; GTA6.house, 20 Nov 2026",
+      "characters": [],
+      "coverage": "limited",
+      "chapter": 2
+    },
+    {
+      "id": "mission-optional-twist",
+      "missionId": "optional-twist",
+      "title": "Twist Wrist, Smash, Grab",
+      "body": "Listed near the chapter-two ending; details are not established.",
+      "category": "Missions",
+      "status": "Limited",
+      "source": "GamesRadar+, 19 Nov 2026; GTA6.house, 20 Nov 2026",
+      "characters": [],
+      "coverage": "limited",
+      "chapter": 2
+    },
+    {
+      "id": "mission-optional-kitty",
+      "missionId": "optional-kitty",
+      "title": "Kitty Litter Labs",
+      "body": "Included in some story-recap lists. Classification varies among guides.",
+      "category": "Missions",
+      "status": "Limited",
+      "source": "GamesRadar+, 19 Nov 2026; GTA6.house, 20 Nov 2026",
+      "characters": [],
+      "coverage": "limited",
+      "chapter": 3
     }
   ],
   "news": [
