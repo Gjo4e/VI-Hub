@@ -28,6 +28,50 @@ public class MainActivity extends Activity {
     private final java.util.concurrent.atomic.AtomicBoolean mapLoading = new java.util.concurrent.atomic.AtomicBoolean(false);
     private static final String MAP_URL = "https://media-rockstargames-com.akamaized.net/VI/downloads/artwork_wallpapers/Leonida_Map_Poster_Printable.zip";
     private static final String MAP_IMAGE = "https://vihub.invalid/official-map.jpg";
+    private static final String TILE_PREFIX = "https://vihub.invalid/map-tile/";
+    private static final int MAP_TILE = 1024;
+    private final Object tileLock = new Object();
+    private File mapOriginal(){return new File(getFilesDir(),"leonida-map-original.jpg");}
+    private JSONObject mapInfo(boolean hd) throws JSONException {
+        JSONObject result = obj("state","ready");
+        result.put("hd",hd);
+        if(hd){
+            android.graphics.BitmapFactory.Options b=new android.graphics.BitmapFactory.Options();
+            b.inJustDecodeBounds=true;
+            android.graphics.BitmapFactory.decodeFile(mapOriginal().getPath(),b);
+            result.put("width",b.outWidth);result.put("height",b.outHeight);
+        }
+        return result;
+    }
+    @SuppressWarnings("deprecation") private WebResourceResponse mapTile(String request) throws IOException {
+        String suffix=request.substring(TILE_PREFIX.length());
+        if(!suffix.matches("[0-9]{1,2}/[0-9]{1,2}"))throw new IOException("Invalid tile");
+        String[] xy=suffix.split("/");
+        int x=Integer.parseInt(xy[0]),y=Integer.parseInt(xy[1]);
+        synchronized(tileLock){
+            File dir=new File(getCacheDir(),"map-tiles-v1");
+            if(!dir.isDirectory()&&!dir.mkdirs())throw new IOException("Cannot create tile cache");
+            File tile=new File(dir,x+"-"+y+".jpg");
+            if(tile.length()>0)return new WebResourceResponse("image/jpeg",null,new FileInputStream(tile));
+            android.graphics.BitmapRegionDecoder decoder=android.graphics.BitmapRegionDecoder.newInstance(mapOriginal().getPath(),false);
+            if(decoder==null)throw new IOException("Map decoder unavailable");
+            android.graphics.Bitmap bmp=null;
+            try{
+                int left=x*MAP_TILE,top=y*MAP_TILE;
+                if(left>=decoder.getWidth()||top>=decoder.getHeight())throw new IOException("Invalid tile position");
+                android.graphics.Rect rect=new android.graphics.Rect(left,top,Math.min(left+MAP_TILE,decoder.getWidth()),Math.min(top+MAP_TILE,decoder.getHeight()));
+                android.graphics.BitmapFactory.Options opt=new android.graphics.BitmapFactory.Options();
+                opt.inPreferredConfig=android.graphics.Bitmap.Config.RGB_565;
+                bmp=decoder.decodeRegion(rect,opt);
+                if(bmp==null)throw new IOException("Tile unavailable");
+                ByteArrayOutputStream result=new ByteArrayOutputStream();
+                if(!bmp.compress(android.graphics.Bitmap.CompressFormat.JPEG,96,result))throw new IOException("Tile encoding failed");
+                byte[] bytes=result.toByteArray();
+                try(FileOutputStream out=new FileOutputStream(tile)){out.write(bytes);}catch(IOException e){tile.delete();}
+                return new WebResourceResponse("image/jpeg",null,new ByteArrayInputStream(bytes));
+            }finally{if(bmp!=null)bmp.recycle();decoder.recycle();}
+        }
+    }
     private static final String HOME = "file:///android_asset/index.html";
     @Override public void onCreate(Bundle state) {
         super.onCreate(state);
@@ -44,6 +88,9 @@ public class MainActivity extends Activity {
         web.setWebViewClient(new WebViewClient() {
             @Override public boolean shouldOverrideUrlLoading(WebView v, WebResourceRequest r) { return true; }
             @Override public WebResourceResponse shouldInterceptRequest(WebView v, WebResourceRequest r) {
+                if (r.getUrl().toString().startsWith(TILE_PREFIX)) {
+                    try{return mapTile(r.getUrl().toString());}catch(Exception e){return new WebResourceResponse("text/plain","UTF-8",new ByteArrayInputStream(new byte[0]));}
+                }
                 if (MAP_IMAGE.equals(r.getUrl().toString())) {
                     try { return new WebResourceResponse("image/jpeg",null,new FileInputStream(new File(getFilesDir(),"leonida-map.jpg"))); }
                     catch(IOException e) { return new WebResourceResponse("text/plain","UTF-8",new ByteArrayInputStream(new byte[0])); }
@@ -99,9 +146,17 @@ public class MainActivity extends Activity {
             }catch(Exception e){reply("catalog",obj("error","Content refresh unavailable. Your saved library is still available."));}});
         }
         @JavascriptInterface public void loadMap(){
-            if(new File(getFilesDir(),"leonida-map.jpg").length()>0){reply("map",obj("state","ready"));return;}
             if(!mapLoading.compareAndSet(false,true))return;
-            mapWorker.execute(()->{try{fetchMap();reply("map",obj("state","ready"));}catch(Exception e){error("map",e);}finally{mapLoading.set(false);}});
+            mapWorker.execute(()->{
+                File overview=new File(getFilesDir(),"leonida-map.jpg");
+                try{
+                    if(overview.length()>0)reply("map",mapInfo(mapOriginal().length()>0));
+                    if(mapOriginal().length()==0||overview.length()==0){fetchMap();reply("map",mapInfo(true));}
+                }catch(Exception e){
+                    if(overview.length()>0)reply("map",obj("state","preview"));
+                    else error("map",e);
+                }finally{mapLoading.set(false);}
+            });
         }
         @JavascriptInterface public void news(String filter){worker.execute(()->{try{fetchNews(filter);}catch(Exception e){error("news",e);}});}
         @JavascriptInterface public void checkUpdate(){worker.execute(()->{try{
@@ -119,7 +174,7 @@ public class MainActivity extends Activity {
         @JavascriptInterface public void installUpdate(){worker.execute(()->{try{downloadAndInstall();}catch(Exception e){error("install",e);}});}
     }
     private void fetchMap() throws Exception {
-        File raw = new File(getCacheDir(),"leonida-source.tmp");
+        File raw = new File(getFilesDir(),"leonida-source.tmp");
         File out = new File(getFilesDir(),"leonida-cache.tmp");
         File target = new File(getFilesDir(),"leonida-map.jpg");
         HttpURLConnection c = connect(MAP_URL);
@@ -153,6 +208,7 @@ public class MainActivity extends Activity {
                 if(!bmp.compress(android.graphics.Bitmap.CompressFormat.JPEG,92,f))throw new IOException("Unable to save map");
             } finally {bmp.recycle();}
             if(!out.renameTo(target))throw new IOException("Unable to cache map");
+            if(!raw.renameTo(mapOriginal()))throw new IOException("Unable to store high-resolution map");
         } finally {c.disconnect();raw.delete();out.delete();}
     }
     private void fetchNews(String filter) throws Exception {
