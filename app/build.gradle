@@ -1,31 +1,47 @@
-plugins { id 'com.android.application' }
+plugins {
+    id 'com.android.application'
+}
+
+def appVersionCode = Integer.parseInt(System.getenv('APP_VERSION_CODE') ?: '1')
+def appVersionName = System.getenv('APP_VERSION_NAME') ?: '1.0.0'
+def updateRepo = System.getenv('GITHUB_REPOSITORY') ?: 'Gjo4e/VI-Hub'
+def releaseKey = System.getenv('SIGNING_STORE_FILE')
+
 android {
-    namespace 'com.vihub.companion'
-    compileSdk 35
+    namespace = 'com.vihub.companion'
+    compileSdk = 35
     defaultConfig {
-        applicationId 'com.vihub.companion'
-        minSdk 26
-        targetSdk 35
-        versionCode (System.getenv('APP_VERSION_CODE') ?: '1').toInteger()
-        versionName System.getenv('APP_VERSION_NAME') ?: '1.0.0'
-        buildConfigField 'String', 'DEFAULT_REPO', '"' + (System.getenv('GITHUB_REPOSITORY') ?: 'Gjo4e/VI-Hub').replaceAll('[^A-Za-z0-9_.\\-/]', '') + '"'
+        applicationId = 'com.vihub.companion'
+        minSdk = 26
+        targetSdk = 35
+        versionCode = appVersionCode
+        versionName = appVersionName
+        buildConfigField('String', 'DEFAULT_REPO', '"' + updateRepo + '"')
     }
-    buildFeatures { buildConfig true }
+    buildFeatures {
+        buildConfig = true
+    }
     signingConfigs {
         release {
-            if (System.getenv('SIGNING_STORE_FILE')) {
-                storeFile file(System.getenv('SIGNING_STORE_FILE'))
-                storePassword System.getenv('SIGNING_STORE_PASSWORD')
-                keyAlias System.getenv('SIGNING_KEY_ALIAS')
-                keyPassword System.getenv('SIGNING_KEY_PASSWORD')
+            if (releaseKey) {
+                storeFile = file(releaseKey)
+                storeType = 'PKCS12'
+                storePassword = System.getenv('SIGNING_STORE_PASSWORD')
+                keyAlias = System.getenv('SIGNING_KEY_ALIAS')
+                keyPassword = System.getenv('SIGNING_KEY_PASSWORD')
             }
         }
     }
     buildTypes {
         release {
-            if (System.getenv('SIGNING_STORE_FILE')) signingConfig signingConfigs.release
-            minifyEnabled false
+            if (releaseKey) {
+                signingConfig = signingConfigs.release
+            }
+            minifyEnabled = false
         }
     }
-    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
 }
