@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": 2,
+  "revision": 3,
   "updated": "2026-11-21",
   "entries": [
     {
@@ -414,6 +414,159 @@
       "category": "Missions",
       "status": "Community",
       "source": "PC Gamer, Nov 18, 2026; launch-guide reference"
+    },
+    {
+      "id": "mission-1-7",
+      "missionId": "story-1-7",
+      "title": "Pipework",
+      "body": "Jason deals with repairs.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; brief story context"
+    },
+    {
+      "id": "mission-1-11",
+      "missionId": "story-1-11",
+      "title": "Coming Home",
+      "body": "Lucia returns to the story's everyday setting.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; brief story context"
+    },
+    {
+      "id": "mission-1-19",
+      "missionId": "story-1-19",
+      "title": "Recalibration",
+      "body": "The protagonists spend time with Cal.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; brief story context"
+    },
+    {
+      "id": "mission-1-22",
+      "missionId": "story-1-22",
+      "title": "Discharge Time",
+      "body": "Lucia checks in on Jason.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; brief story context"
+    },
+    {
+      "id": "mission-2-1",
+      "missionId": "story-2-1",
+      "title": "What's in the Bag?",
+      "body": "The setting shifts to Port Gellhorn.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; brief story context"
+    },
+    {
+      "id": "mission-2-11",
+      "missionId": "story-2-11",
+      "title": "Checking Out",
+      "body": "The pair considers what comes next.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; brief story context"
+    },
+    {
+      "id": "mission-3-3",
+      "missionId": "story-3-3",
+      "title": "Meet the Heders",
+      "body": "A social occasion introduces new acquaintances.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; brief story context"
+    },
+    {
+      "id": "mission-3-4",
+      "missionId": "story-3-4",
+      "title": "Dubious Provenance",
+      "body": "An antique shop features in the story.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; brief story context"
+    },
+    {
+      "id": "mission-3-10",
+      "missionId": "story-3-10",
+      "title": "Top Billing",
+      "body": "Dre’Quan joins the protagonists at a music event.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; brief story context"
+    },
+    {
+      "id": "mission-3-12",
+      "missionId": "story-3-12",
+      "title": "First Impressions",
+      "body": "Raul enters the story.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; brief story context"
+    },
+    {
+      "id": "mission-3-23",
+      "missionId": "story-3-23",
+      "title": "Cooties",
+      "body": "Lucia participates in a music-video project.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; brief story context"
+    },
+    {
+      "id": "mission-4-2",
+      "missionId": "story-4-2",
+      "title": "Another Life",
+      "body": "Lucia reflects on earlier experiences.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; brief story context"
+    },
+    {
+      "id": "mission-4-4",
+      "missionId": "story-4-4",
+      "title": "Lawyer Up",
+      "body": "The protagonists are introduced to legal counsel.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; brief story context"
+    },
+    {
+      "id": "mission-4-7",
+      "missionId": "story-4-7",
+      "title": "Photo/Shoot",
+      "body": "A photography session involves Dre’Quan.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; brief story context"
+    },
+    {
+      "id": "mission-4-18",
+      "missionId": "story-4-18",
+      "title": "Headliners",
+      "body": "The music duo performs at VYB.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; brief story context"
+    },
+    {
+      "id": "mission-4-24",
+      "missionId": "story-4-24",
+      "title": "Sunset",
+      "body": "The pair seeks an explanation.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; brief story context"
+    },
+    {
+      "id": "mission-5-2",
+      "missionId": "story-5-2",
+      "title": "Taking Liberties",
+      "body": "The protagonists reconsider their plans.",
+      "category": "Missions",
+      "status": "Community",
+      "source": "PC Gamer, Nov 18, 2026; brief story context"
     }
   ],
   "news": [
